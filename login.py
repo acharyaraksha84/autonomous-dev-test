@@ -1,7 +1,7 @@
 def login(username, password):
 
-    if password == "":
+    if not password:
         print("Password cannot be empty")
+        return False
 
-    else:
-        print("Login successful")
+    print("Login successful")
