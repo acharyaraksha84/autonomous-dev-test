@@ -5,3 +5,12 @@ def login(username, password):
         return False
 
     print("Login successful")
+
+def validate_username(username):
+    if not username:
+        return False
+    if len(username) < 3:
+        return False
+    if not username.isalnum():
+        return False
+    return True
